@@ -1,0 +1,336 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#ab{
+    list-style: none;
+    color: rgb(61, 143, 206);
+}
+
+body {
+    margin-left: 170px;
+    background-image: url(back2.jpg);
+    background-position: center;
+    background-size: cover;
+    font-family: sans-serif;
+    background-color: rgb(15, 20, 36);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+
+
+.sectiontital h2 {
+    margin-top: 30px;
+    color: rgb(61, 143, 206);
+    font-size: 70px;
+    line-height: 100px;
+    letter-spacing: -3px;
+}
+
+.aboutcontent {
+    margin: 30px 200px 32px 0px;
+}
+
+.aboutcontent h3 span {
+    color: brown;
+}
+
+.aboutcontent h3 {
+    color: rgb(80, 157, 216);
+    font-size: 21px;
+}
+
+.aboutcontent p {
+    color: rgb(175, 208, 234);
+    font-size: 16px;
+}
+
+.row2 {
+    display: flex;
+}
+
+.persnolinfo {
+    background-color: rgb(36, 35, 37);
+    opacity: 0.50;
+    flex: 0 0 40%;
+    max-width: 40%;
+    height: 335px;
+    padding: 20px;
+    margin: 10px;
+}
+.persnolinfo:hover{
+    opacity: 10;
+}
+
+.persnolinfo .infoitm {
+    flex: 0 0 50%;
+    opacity: 1;
+    color: rgb(201, 209, 236);
+    line-height: 35px;
+    font-size: 18px;
+    font-weight: 500;
+    border-bottom: 2px solid rgb(7, 7, 7);
+    letter-spacing: 1px;
+}
+
+.persnolinfo .infoitm span {
+    font-weight: 100;
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+}
+
+#bttn{
+        
+    display:none;
+    background: transparent;
+
+    margin-top: 10px;
+    margin-right: 95px;
+    
+}
+.opn{
+    color: rgb(36, 113, 214);
+    font-size: 25px;
+}
+
+/* ----------------.contact button---------------- */
+
+.contact-button {
+    border-radius: 100px;
+    margin: 10px 0 0 10px;
+    text-decoration: none;
+    width: 100%;
+    max-width: 200px;
+    height: 40px;
+    display: block;
+    line-height: 40px;
+    letter-spacing: 3px;
+    position: relative;
+    text-align: center;
+    color: rgb(61, 143, 206);
+    overflow: hidden;
+
+}
+
+.contact-button div {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    transition: all .3s ease-in-out;
+
+}
+
+.contact-button .bg {
+    position: absolute;
+    width: 00%;
+    height: 100%;
+    left: -5px;
+    transition: all .3s ease-in-out;
+    background-color: rgb(61, 143, 206);
+    transform: skewX(-20deg);
+    overflow: hidden;
+}
+
+.contact-button:hover span.bg {
+    width: 110%;
+}
+
+.contact-button .base {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    border: 1px solid rgb(61, 143, 206);
+    box-sizing: border-box;
+    border-radius: 200px;
+}
+
+.contact-button .text {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.contact-button:hover .text {
+    color: black;
+}
+
+/* --------------------------------------------------------- */
+
+
+
+.skills {
+
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(36, 35, 37);
+    opacity: 0.50;
+    flex: 0 0 40%;
+    max-width: 40%;
+    height: 335px;
+    padding: 20px;
+    margin: 10px;
+}
+
+.skills:hover{
+    opacity: 10;
+}
+
+.skillitem {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 25px;
+}
+
+.skillitem h5 {
+    line-height: 40px;
+    font-weight: 600;
+    font-size: 16px;
+
+}
+
+.skillitem .progress {
+    background-color: black;
+    height: 7px;
+    border-radius: 4px;
+    width: 100%;
+    position: relative;
+}
+
+.skillitem .progress .progressin {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    border-radius: 4px;
+    background-color: rgb(61, 143, 206);
+}
+
+.skillitem .progress .skillpercent {
+    position: absolute;
+    bottom: 5px;
+    right: 0;
+    color: rgb(199, 221, 237);
+    font-weight: 400;
+    line-height: 40px;
+}
+
+
+
+
+
+
+
+/* /////////////////////////////media for tab/////////////////////////// */
+
+@media (max-width: 1050px){
+    
+    #bttn{
+        display: inline-flex;}
+
+    body {
+        margin:30px;
+    }
+    
+    .aboutcontent {
+        margin: 0px;;
+    }
+
+    .persnolinfo {
+     max-width:50%;
+        height: auto;
+        padding: 20px;
+        margin: 10px;
+    }
+    .skills {
+        max-width: 50%;
+        height: auto;
+    }
+
+    .row2{
+display: flex;
+flex-wrap: wrap;
+    }
+
+}
+
+
+@media (max-width:671px){
+    body {
+        margin:15px;}
+
+    .row2{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+            }
+
+            .sectiontital h2 {
+                margin-top: 0px;
+                font-size: 50px;
+                line-height: 50px;
+            }
+
+            .aboutcontent {
+                margin: 0px;
+            }
+
+            .aboutcontent h3 {
+                font-size: 18px;
+            }
+            .aboutcontent p {
+                font-size: 11px;
+            }
+
+            .persnolinfo {
+                max-width: 90%;
+                height: auto;
+            }
+
+
+
+            .persnolinfo .infoitm {
+                line-height: 30px;
+                font-size: 15px;
+                font-weight: 400;
+                letter-spacing: 0.5px;
+            }
+            
+            .persnolinfo .infoitm span {
+                font-weight: 100;
+                font-size: 14px;
+                color: rgb(255, 255, 255);
+            }
+            
+
+            .skills {
+                max-width: 90%;
+                height: auto;
+            }
+            .skillitem h5 {
+                line-height: 25px;
+                font-weight: 500;
+                font-size: 14px;
+            }
+
+
+            .skillitem .progress .skillpercent {
+          
+                right: 0;
+                color: rgb(199, 221, 237);
+                font-weight: 10;
+                line-height: 15px;
+                font-size: 13px;
+            }
+            .skillitem {
+                margin-bottom: 8px;
+            }
+
+
+}

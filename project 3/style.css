@@ -1,0 +1,239 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    border: 4px solid rgb(0, 0, 0);
+    overflow: hidden;
+    /* width: 100%; */
+    background: url(walpaper.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    height: 75px;
+    margin: auto;
+
+}
+
+.icon {
+    /* width: 200px; */
+    float: left;
+    height: 70px;
+
+
+
+}
+
+.logo {
+    cursor: pointer;
+    color: rgb(153, 43, 134);
+    font-size: 30px;
+    font-family: arial;
+    padding-left: 20px;
+    padding-right: 10px;
+    float: left;
+    margin-top: 15px;
+}
+
+.icon :hover {
+    transition: 2s;
+    color: rgb(116, 78, 173);
+}
+
+.menu {
+  margin: auto;
+    float: left;
+    height: 70px;
+}
+
+ul {
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 90px;
+}
+
+ul li {
+    list-style: none;
+    text-decoration: none;
+
+    margin-top: 27px;
+}
+
+ul li a {
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: none;
+    margin: 25px;
+    color:  rgb(116, 78, 173);
+}
+
+.menu :hover {
+    color: rgb(153, 43, 134) ;
+}
+
+.serch {
+    margin-top: 23px;
+    margin-right: 80px;
+    display: flex;
+    float: right;
+    height: 30px;
+    float: left;
+
+
+}
+
+.srch {
+    width: 250px;
+    border: 2px solid rgb(153, 43, 134);
+    background: transparent;
+    border-top-left-radius:9px ;
+    border-bottom-left-radius:9px ;
+
+
+}
+.srch:focus{
+    outline: none;
+}
+.serch button {
+    color: rgb(245, 245, 245);
+    height: 30px;
+    width: 80px;
+    background: rgb(153, 43, 134);
+    border: 2px solid rgb(153, 43, 134);
+    border-top-right-radius:9px ;
+    border-bottom-right-radius:9px ;
+}
+.content{
+    height: auto;
+    margin: auto;
+    color: rgb(247, 205, 205);
+    position: relative;
+    padding-left: 20px;
+    padding-bottom: 25px;
+    font-family:cursive;
+}
+
+.content{
+     cursor: pointer;
+    padding-left: 70px;
+    padding-bottom: 5px;
+    font-family:cursive;
+}
+.content h1 {
+    font-family: 'Times New Roman';
+    font-size: 50px;
+    margin-top: 9%;
+}
+
+.bt{
+    
+    font-size: 16px;
+     width: 160px;
+     height: 30px;
+     border: 2px solid black;
+     background-color: rgb(153, 43, 134);
+     border-radius: 9px;
+    cursor: pointer;
+}
+.bt:hover{
+    background-color:rgb(7, 11, 77) ;
+    border: 2px solid rgb(0, 0, 0);
+    transition:1s;
+}
+.bt a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.content span{
+    color: rgb(153, 43, 134);
+}
+
+.form{
+    width: 300px;
+    height: 295px;
+padding: 12px;
+    position: absolute;
+    top: 10px;
+    left: 1058px;
+    border-radius: 10px;
+    border: 2px solid rgb(180, 117, 169);
+}
+.form h2{
+ 
+   font-family: sans-serif;
+   text-align: center;
+   font-size: 22px;
+   background-color: rgb(153, 43, 134);
+    border-radius: 10px;
+    margin: 3px;
+
+}
+
+.form input{
+    color: white;
+    width: 295px;
+    height: 30px;
+    background: transparent;
+    border-bottom: 1px solid rgb(153, 43, 134);
+    border-right: none;
+    border-top: none;
+    border-left: none;
+    font-size: 15px;
+    letter-spacing:1px;
+    margin-top: 20px;
+     
+    
+}
+.form .btn{
+    color: white;
+    margin-top: 9px;
+    font-size: 16px;
+    width: 295px;
+    height: 30px;
+    border: 2px solid black;
+    background-color: rgb(167, 99, 156);
+    border-radius: 9px;
+   cursor: pointer;
+}
+.btn:hover{
+    background-color:rgb(7, 11, 77) ;
+    border: 2px solid rgb(0, 0, 0);
+}
+::placeholder{
+    color: rgb(195, 148, 148);
+}
+.btn a{
+
+    text-decoration: none;
+    color: black;
+}
+.form .link{
+    font-family: Arial;
+    font-size: 17px;
+    padding-top: 10px;
+    text-align: center;
+}
+.sih{
+    font-family: Arial;
+    text-decoration: none;
+    color: rgb(153, 43, 134);
+    align-items: center;
+    text-align: center;
+    margin: 102px;
+    padding-top: 20px;
+    
+}
+.form .log{
+    font-family: Arial;
+    text-align: center;
+}

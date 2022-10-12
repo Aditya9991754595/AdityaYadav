@@ -1,0 +1,245 @@
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+#hm{
+    list-style: none;
+    color: rgb(61, 143, 206);
+}
+
+    
+body {
+    /* font-family: 'Kdam Thmor Pro', sans-serif; */
+    color: rgb(212, 203, 203);
+    background-image: url(back.jpg)  ;
+    background-position: center;
+    background-size:cover;
+    height: 100vh;
+    background-color: rgb(15, 20, 36);
+
+
+}
+
+#sectionhome {
+    overflow: hidden;
+    cursor: pointer;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-left: 25px;
+    margin-left: 150px;
+
+}
+
+.text .a {
+    cursor: pointer;
+    font-size: larger;
+    color: rgb(136, 67, 67);
+}
+
+.a:hover {
+    font-style: italic;   
+     color: rgb(191, 39, 39);
+}
+
+.d:hover {
+   font-style: italic;
+    color: rgb(136, 67, 67);
+}
+
+.h:hover {
+    font-style: italic;
+        color: rgb(61, 143, 206);
+}
+
+.text h1 {
+    font-size: 103px;
+    line-height: 100px;
+    letter-spacing: -3px;
+}
+
+.text .text1 {
+    margin-top: 30px;
+    color: rgb(26, 65, 116);
+    font-size: 1rem;
+    position: relative;
+    letter-spacing: 2px
+}
+
+
+.text1:hover {
+    color: rgb(191, 39, 39);}
+
+    .home{
+        width: 100vw;
+    }
+    #bttn{
+        
+        display:none;
+        background: transparent;
+
+        margin-top: 50px;
+        margin-right: 95px;
+        
+    }
+    .opn{
+        color: rgb(36, 113, 214);
+        font-size: 25px;
+    }
+
+
+/* ----------------.contact button---------------- */
+
+.contact-button {
+   border-radius: 200px;
+    margin-top: 50px 0 0;
+    text-decoration: none;
+    width: 100%;
+    max-width: 200px;
+    height: 40px;
+    display: block;
+    line-height: 40px;
+    letter-spacing: 3px;
+    position: relative;
+    text-align: center;
+    color: rgb(36, 113, 214);
+    overflow: hidden;
+
+}
+
+.contact-button div {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    transition: all .3s ease-in-out;
+
+}
+
+.contact-button .bg {
+    position: absolute;
+    width: 00%;
+    height: 100%;
+    left: -5px;
+    transition: all .3s ease-in-out;
+     background-color:rgb(36, 113, 214);
+    transform: skewX(-20deg);
+overflow: hidden;
+}
+
+.contact-button:hover span.bg {
+    width: 110%;
+}
+
+.contact-button .base {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    border: 1px solid rgb(36, 113, 214); 
+       box-sizing: border-box;
+    border-radius: 200px;
+}
+
+.contact-button .text {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.contact-button:hover .text {
+    color: black;
+}
+.about section{
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+/* /////////////////////////////media for tab/////////////////////////// */
+
+@media (max-width: 1050px) {
+ #bttn{
+    display: inline-flex;
+ }
+ body{
+    padding: 30px 30px 20px 40px ;
+    margin-top: -50px;
+    height: auto;
+    background-size:cover;
+    overflow: hidden;
+ }
+    #sectionhome {
+
+        padding: 0px;
+        margin: 0px;
+        margin-top: -20px;   
+    }
+
+    .text h1 {
+        font-size: 100px;
+        line-height: 90px;
+        letter-spacing: -3px;
+    }
+
+    .text .text1 {
+        margin-top: 10px;
+        padding-top: 0px;
+        
+    }
+}
+
+
+/* /////////////////////////////media for mobile/////////////////////////// */
+
+
+@media (max-width: 750px){
+    body{
+        padding: 25px 25px 15px 30px ;
+        margin-top: -50px;
+        height: auto;
+        align-items: center;
+        justify-content: center;
+     }
+  
+
+     #sectionhome {
+        padding: 0px;
+        margin: 0px; 
+        margin-top: -50px;   
+
+    }
+
+    .text h1 {
+        font-size:70px;
+        line-height:70px;
+        letter-spacing: -2px;
+    }
+
+}
+
+@media (max-width: 370px){
+    .text h1 {
+        font-size:60px;
+        line-height:60px;
+        letter-spacing: -1px;
+    }
+
+    body{
+        padding: 25px 25px 15px 30px ;
+        margin-top: -50px;
+        height: auto;
+        align-items: center;
+        justify-content: center;
+     }
+}
+
+

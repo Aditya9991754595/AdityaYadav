@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background: url(back3.jpg) no-repeat center center/cover;
+    position: absolute;
+    display: inline-block;
+    
+}
+nav img{ 
+    width: 60px;    
+    display: inline-block;
+    
+
+     
+}
+nav{
+    display: flex;
+    padding: 1% 6%;
+    align-items: center;
+    justify-content: space-between;
+    
+
+}
+.ul{
+     text-align: right;
+     display: inline-block;
+    
+}
+.ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    margin-top: 1px;
+    position: relative;
+}
+.ul li a {
+    color: rgb(250, 229, 223);
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    display: inline-block;
+
+}
+.ul li  ::after{
+        content: '';
+        width: 0%;
+        height: 2.5px;
+        background: rgb(199, 92, 50);
+        display: block;
+        margin: auto;
+        transition: 0.5s;
+}
+.ul li :hover::after{
+    width: 100%;
+}
+
+.text{
+     width: 90%;
+     color: white;
+     position: absolute;
+     top:40% ;
+     left:50% ;
+     text-align: center;
+     transform: translate(-50%, -50%);
+}
+.text h1{
+    font-size: 60px;
+    color:rgb(199, 92, 50) ;
+ }
+ .text p{
+    margin: 10px 0 40px;
+    font: 10px;
+ }
+ .btn1{
+      display: inline-block;
+      text-decoration: none;
+      border: 1px solid rgb(109, 49, 14);
+      color: rgb(199, 92, 50);
+    padding: 7px 32px ;
+    font-size: 16px;
+    position: relative;
+    cursor: pointer;
+
+ }
+
+ .btn1:hover{
+    color:black;
+     border: 1px solid rgb(199, 92, 50);
+     background-color: rgb(199, 92, 50);
+     transition: 1.3s;
+     border-radius: 5px;
+ }
+nav .fa{
+    display: none;
+}
+ 
+ @media(max-width: 700px){
+    .text h1{
+        font-size: 20px;
+        color:rgb(199, 92, 50) ;
+    }
+        .text p{
+            margin: 10px 0 40px;
+            font-size: 12px;
+        }
+        .ul li{ display: block;}
+
+        .ul{
+            position: absolute;
+            background:rgb(199, 92, 50) ;
+            height: 100vh;
+            width: 200px;
+            top: 0;
+            right: -300px;
+            text-align: left;
+            z-index: 1;
+        }
+
+nav .fa{
+     display: block;
+     color: white;
+     margin: 10px;
+     cursor: pointer;
+}
+
+.ul{
+    padding: 30px;
+}
+         
+    }
+
+
+    section  .course{
+        color: white;
+        display: inline-block;
+    }
